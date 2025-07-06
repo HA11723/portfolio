@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadi Nasir - Contact Me</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <!-- Replacing the image with a text -->
+          <h3 class="logo-text">Hadi Nasir</h3>
+        </a>
+      </div>
+
+      <div class="menu-icon" id="menuIcon">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+
+      <nav>
+        <ul id="navLinks">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero Section -->
+      <section class="contact-hero section">
+        <h1><i class="fas fa-paper-plane"></i> Let's Connect</h1>
+        <p>
+          I'm always excited to discuss new opportunities, collaborate on
+          interesting projects, or simply chat about technology. Whether you
+          have a question, a project idea, or just want to say hello, I'd love
+          to hear from you!
+        </p>
+      </section>
+
+      <!-- Contact Container -->
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <section class="contact-info section">
+          <h2><i class="fas fa-address-card"></i> Get in Touch</h2>
+          <p>
+            Ready to start a conversation? Choose the method that works best for
+            you. I typically respond within 24 hours and look forward to
+            connecting with you.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-method-info">
+                <h3>Email Me</h3>
+                <p>
+                  <a href="mailto:your.email@example.com"
+                    >Hadinasir067@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="fas fa-phone"></i>
+              <div class="contact-method-info">
+                <h3>Call Me</h3>
+                <p><a href="tel:+1234567890">+1-778-957-9011</a></p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-method-info">
+                <h3>Location</h3>
+                <p>Vanvouver BC, Canada<br />Available for remote work</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="fas fa-clock"></i>
+              <div class="contact-method-info">
+                <h3>Response Time</h3>
+                <p>Within 24 hours<br />Sunday - Friday</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section section">
+          <h2><i class="fas fa-comment-dots"></i> Send a Message</h2>
+          <p>
+            Prefer to send a direct message? Fill out the form below and I'll
+            get back to you as soon as possible.
+          </p>
+
+          <!-- ✅ UPDATED: Added action="/contact" and method="POST" -->
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="/contact"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName"
+                  ><i class="fas fa-user"></i> First Name *</label
+                >
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName"
+                  ><i class="fas fa-user"></i> Last Name *</label
+                >
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email"
+                ><i class="fas fa-envelope"></i> Email Address *</label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject"><i class="fas fa-tag"></i> Subject *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                ><i class="fas fa-comment"></i> Message *</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project, question, or just say hello..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Social Connect Section -->
+      <section class="social-connect section">
+        <h2><i class="fas fa-share-alt"></i> Connect on Social Media</h2>
+        <p>
+          Follow me on social media for updates on my latest projects, tech
+          insights, and behind-the-scenes content.
+        </p>
+
+        <div class="social-grid">
+          <div class="social-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Check out my code repositories and open-source contributions</p>
+            <a href="https://github.com/HA11723" target="_blank">@HA11723</a>
+          </div>
+
+          <div class="social-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect professionally and see my career journey</p>
+            <a
+              href="https://www.linkedin.com/in/hadi-nasir-09362318b/"
+              target="_blank"
+              >@HadiNasir
+            </a>
+          </div>
+
+          <div class="social-card">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p>Behind-the-scenes content and personal updates</p>
+            <a href="https://www.instagram.com/hadi.nasir.2/" target="_blank"
+              >@hadi.nasir.2
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Hadi Nasir | Developer | All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/HA11723"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hadi-nasir-09362318b/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hadi.nasir.2/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

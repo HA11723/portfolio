@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadi Nasir - Portfolio</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <!-- Replacing the image with a text -->
+          <h3 class="logo-text">Hadi Nasir</h3>
+        </a>
+      </div>
+
+      <div class="menu-icon" id="menuIcon">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+
+      <nav>
+        <ul id="navLinks">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="profile-container">
+        <div class="profile-image"></div>
+        <div class="profile-info">
+          <h2>Hadi Nasir</h2>
+          <p>Computer Science & Technology Student at Langara College</p>
+          <p>Full-Stack Developer (5+ Years Experience)</p>
+          <p>
+            Specialized in web & iOS development using JavaScript, SwiftUI, and
+            Firebase
+          </p>
+          <p class="animated-text"><span id="rotatingText"></span></p>
+
+          <a href="/projects" class="projects-btn">
+            <i class="fas fa-code"></i> View My Work
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <!-- Replace your existing skills section with this updated version -->
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="html">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Semantic markup and modern web standards</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/HadiNasirDev"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Portfolio Site
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Form-components"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Form Components
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="css">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Responsive design and modern layouts</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/Css-Animations"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> CSS Animations
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Responsive-Design"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Responsive Design
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Grid-Layouts"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Grid Layouts
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="javascript">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, and async programming</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/Calculator-App-with-Javascript"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Calculator App
+                  </a>
+
+                  <a
+                    href="https://github.com/HA11723/DOM-Driven-Task-Dashboard"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> DOM Projects
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="react">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Component-based UI development</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/react-todo-app"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Todo Application
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/react-ecommerce"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> E-commerce Site
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/react-hooks-examples"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Hooks Examples
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="nodejs">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-node-js"></i>
+                <p>Server-side JavaScript and API development</p>
+              </div>
+              <div class="skill-card-back">
+                <h3>Node.js Projects</h3>
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/Starter-files"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> TV Show Database
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Pizza-Form"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Pizza Form
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/nodejs-auth"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> AuthenticationS
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="database">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-database"></i>
+                <p>MySQL, MongoDB, and data modeling</p>
+              </div>
+              <div class="skill-card-back">
+                <h3>Database Projects</h3>
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/Database-Table"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> MySQL Codes
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="python">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Scripting, data analysis, and automation</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/Alarm-Clock"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Alarm-Clock
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Tic-Tac-Toe-game-with-Python"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Tic-Tac-Toe
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="cpp">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-code"></i>
+                <h3>C++</h3>
+                <p>Object-oriented programming and performance</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/C-Calculator-Project-"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> C++ Calculator
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/C-project"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Data Structures
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="java">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-java"></i>
+                <p>Cross-platform applications and backend systems</p>
+              </div>
+              <div class="skill-card-back">
+                <h3>Java Projects</h3>
+                <div class="skill-links">
+                  <a href="https://github.com/HA11723/JavaFX" target="_blank">
+                    <i class="fab fa-github"></i> Fancy Clock
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Java-JavaFX"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> JavaFX Codes
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="swiftui">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>SwiftUI</h3>
+                <p>iOS UI development using modern Swift</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links">
+                  <a
+                    href="https://github.com/HA11723/chime-in-app"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Chime In App
+                  </a>
+                  <a
+                    href="https://github.com/HA11723/Chating-App"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> ChatingApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="firebase">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-fire"></i>
+                <h3>Firebase</h3>
+                <p>Realtime database, auth, and cloud functions</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="bootstrap">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fab fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+                <p>Responsive design with component-based styles</p>
+              </div>
+              <div class="skill-card-back">
+                <div class="skill-links"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience">
+        <h2>Experience</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <h3>Full-Stack Developer</h3>
+            <div class="company">Freelance</div>
+            <div class="duration">2020 – Present</div>
+            <p>
+              Developed and deployed custom web and mobile applications using
+              modern tech stacks.<br />
+              Specialized in e-commerce, real-time systems, and cloud
+              integration (Firebase, Node.js).
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Chime In App</h3>
+            <div class="company">Personal iOS Project</div>
+            <div class="duration">2025</div>
+            <p>
+              Created a SwiftUI-based app for creating, joining, and managing
+              real-time events.<br />
+              Integrated Firebase Authentication and Firestore for secure data
+              handling.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Independent IT Technician</h3>
+            <div class="company">Colorz Technology</div>
+            <div class="duration">2019</div>
+            <p>
+              Installed operating systems (e.g., Windows), configured systems,
+              and updated software.<br />
+              Provided phone/computer troubleshooting and customer technical
+              support in Tira, Israel.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Communication, Sales & Dropshipping</h3>
+            <div class="company">Self-Led Projects</div>
+            <div class="duration">2021 - 2023</div>
+            <p>
+              Launched multiple online stores using Shopify and social media
+              advertising.<br />
+              Built landing pages, optimized sales funnels, and developed strong
+              business communication skills.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Computer Science Student</h3>
+            <div class="company">Langara College</div>
+            <div class="duration">2022 - 2025</div>
+            <p>
+              Pursuing a Diploma in Computer Science and Technology.<br />
+              Focus areas include software development, algorithms, databases,
+              and applied AI.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Software Testing Diploma</h3>
+            <div class="company">IPC College, Tira City, Israel</div>
+            <div class="duration">Ongoing</div>
+            <p>
+              Practical training in manual and automated software testing
+              environments.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>English Language Program</h3>
+            <div class="company">University of British Columbia (UBC)</div>
+            <div class="duration">2022</div>
+            <p>
+              Academic English program in Vancouver, BC, supporting
+              communication for tech and business.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Hadi Nasir | Developer | All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/HA11723"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hadi-nasir-09362318b/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hadi.nasir.2/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
