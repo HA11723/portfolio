@@ -1,6 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.getElementById("menuIcon");
   const navLinks = document.getElementById("navLinks");
+  const themeToggle = document.getElementById("themeToggle");
+
+  // Theme toggle functionality
+  const initTheme = () => {
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    updateThemeIcon(savedTheme);
+  };
+
+  const updateThemeIcon = (theme) => {
+    const icon = themeToggle.querySelector("i");
+    if (theme === "light") {
+      icon.className = "fas fa-sun";
+    } else {
+      icon.className = "fas fa-moon";
+    }
+  };
+
+  const toggleTheme = () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateThemeIcon(newTheme);
+
+    // Update meta theme color for mobile
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        newTheme === "light" ? "#ffffff" : "#111"
+      );
+    }
+  };
+
+  // Initialize theme
+  initTheme();
+
+  // Theme toggle event listener
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme);
+  }
 
   // Toggle mobile menu
   if (menuIcon && navLinks) {
