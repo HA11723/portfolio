@@ -1412,7 +1412,11 @@ footer {
         text-align: left;
     }
 }
-
+/* Resume Button Styles */
+.resume-btn,
+.resume-btn button {
+  text-decoration: none;
+}
 /* Resume Button Styles */
 .resume-btn button {
   background: var(--accent-primary);
