@@ -1412,3 +1412,29 @@ footer {
         text-align: left;
     }
 }
+
+/* Resume Button Styles */
+.resume-btn button {
+  background: var(--accent-primary);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resume-btn button:hover {
+  background: var(--accent-secondary);
+  color: var(--text-primary);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: var(--shadow-hover);
+}
+.resume-btn i {
+  font-size: 1.2em;
+}
