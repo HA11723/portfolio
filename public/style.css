@@ -1419,19 +1419,15 @@ footer {
   text-decoration: none;
 }
 .resume-btn button {
-  background: var(--card-bg);
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: none;
-  transition: 0.3s ease;
-  display: inline-block;
-  align-items: center;
-  gap: 8px;
+  margin-top: 15px;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 0.3s ease;
+    background-color: var(--card-bg);
 }
 .resume-btn button:hover {
   background: var(--accent-primary);
