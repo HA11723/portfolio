@@ -1419,22 +1419,18 @@ footer {
   text-decoration: none;
 }
 .resume-btn button {
-  margin-top: 15px;
-    display: inline-block;
-    border: 1px solid var(--border-color);
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
+     display: inline-block;
+    padding: 10px 20px;
+    background: var(--card-bg);
     color: var(--text-primary);
-    transition: 0.3s ease;
-    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 .resume-btn button:hover {
-  background: var(--accent-primary);
-  color: var(--text-primary);
-  border-color: var(--accent-primary);
-  transform: none;
-  box-shadow: none;
+ transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(45, 183, 186, 0.3);
 }
 .resume-btn i {
   font-size: 1.2em;
