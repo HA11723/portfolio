@@ -1421,15 +1421,15 @@ footer {
 .resume-btn button {
   background: var(--card-bg);
   color: var(--text-primary);
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   padding: 8px 16px;
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
   box-shadow: none;
   transition: 0.3s ease;
-  display: flex;
+  display: inline-block;
   align-items: center;
   gap: 8px;
 }
