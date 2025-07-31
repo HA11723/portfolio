@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let charIndex = 0;
       const line = document.createElement("span");
       line.style.color = phrase.color;
-      rotatingText.innerHTML = ""; // clear previous text
+      rotatingText.innerHTML = ""; 
       rotatingText.appendChild(line);
 
       const typeChar = () => {
@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
       e.stopPropagation(); // Prevent click event from bubbling up to document
       card.classList.toggle("flipped");
 
-      // Optional: Close other cards when one is opened
       skillCards.forEach((otherCard) => {
         if (otherCard !== card) {
           otherCard.classList.remove("flipped");
