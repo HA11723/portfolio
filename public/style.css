@@ -376,15 +376,15 @@ footer {
 }
 
 .skill-card {
-    background: transparent; /* Change from #222 to transparent */
-    padding: 0; /* Remove padding as it's now on the inner elements */
+    background: transparent; 
+    padding: 0; 
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease-in;
-    border: none; /* Remove border as it's now on the inner elements */
-    perspective: 1000px; /* Add perspective for 3D effect */
-    height: 250px; /* Set fixed height for consistency */
-    cursor: pointer; /* Show it's clickable */
+    border: none; 
+    perspective: 1000px; 
+    height: 250px; 
+    cursor: pointer; 
 }
 .skill-card-inner {
     position: relative;
@@ -434,7 +434,6 @@ footer {
     box-shadow: 0 20px 25px rgba(45, 183, 186, 0.2);
 }
 
-/* Ensure back card doesn't get affected by hover translate */
 .skill-card:hover .skill-card-back {
     transform: rotateY(180deg) translateY(-3px);
 }
@@ -499,10 +498,9 @@ footer {
     font-size: 1rem;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .skill-card {
-        height: 220px; /* Slightly smaller on mobile */
+        height: 220px; 
     }
     
     .skill-card-front, .skill-card-back {
@@ -670,7 +668,6 @@ footer {
 }
     
 
-/* Scroll reveal animations - target actual sections */
 .profile-container,
 .skills,
 .experience {
@@ -687,7 +684,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Optional: Add different animation delays for staggered effect */
 .profile-container {
     transition-delay: 0.1s;
 }
@@ -725,7 +721,6 @@ footer {
     padding: 40px;
     border-radius: 15px;
     border-left: 4px solid #2DB7BA;
-    /* ADD THESE ANIMATION PROPERTIES */
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
@@ -740,7 +735,6 @@ footer {
     text-align: center;
     margin: 60px auto;
     max-width: 800px;
-    /* ADD THESE ANIMATION PROPERTIES */
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
@@ -1224,7 +1218,6 @@ footer {
     animation: slideDown 0.5s ease;
 }
 
-/* MOBILE MENU STYLES - COMPACT VERSION */
 @media (max-width: 768px) {
     .logo-center { 
         top: -20%; 
@@ -1234,7 +1227,6 @@ footer {
         height: 160px; 
     }
     
-    /* Show hamburger menu */
     .menu-icon {
         display: flex;
         position: absolute;
@@ -1244,7 +1236,6 @@ footer {
         z-index: 1000;
     }
     
-    /* Hide desktop navigation and make it compact dropdown */
     nav ul {
         display: none;
         flex-direction: column;
@@ -1262,7 +1253,6 @@ footer {
         z-index: 999;
     }
     
-    /* Show menu when active */
     nav ul.active {
         display: flex;
         animation: slideDown 0.3s ease-out;
@@ -1292,7 +1282,6 @@ footer {
         transform: translateX(5px);
     }
     
-    /* Theme toggle in mobile menu */
     .theme-toggle-container {
         margin-top: 20px;
     }
@@ -1303,7 +1292,6 @@ footer {
         font-size: 18px;
     }
     
-    /* Hamburger animation */
     .menu-icon.active .hamburger-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -1332,7 +1320,6 @@ footer {
         }
     }
     
-    /* Navigation container positioning */
     nav {
         position: relative;
     }
@@ -1342,7 +1329,6 @@ footer {
         gap: 40px;
       }
     
-      /* Center-align text inside contact sections */
       .contact-info,
       .contact-form-section {
         text-align: center;
@@ -1377,7 +1363,6 @@ footer {
         font-size: 1rem;
       }
     
-      /* Social grid becomes 1 column on small screens */
       .social-grid {
         grid-template-columns: 1fr;
       }
@@ -1403,7 +1388,7 @@ footer {
     }
     
     .profile-container {
-        flex-direction: row-reverse; /* Image on right, text on left */
+        flex-direction: row-reverse; 
         align-items: center;
         text-align: left;
     }
@@ -1413,7 +1398,6 @@ footer {
     }
 }
 
-/* Resume Button Styles */
 .resume-btn,
 .resume-btn button {
   text-decoration: none;
